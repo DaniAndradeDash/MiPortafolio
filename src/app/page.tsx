@@ -7,20 +7,20 @@ import Tecnologies from './tecnologies/page';
 
 export default function HomePage() {
   return (
-    <main className="h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
-      <section className="h-screen snap-start">
+    <main className="h-screen overflow-y-auto scroll-smooth snap-y snap-mandatory scrollbar-hide">
+      <section id='Hero' className="h-screen snap-start">
         <Hero />
       </section>
-      <section className="h-screen snap-start">
+      <section id='About' className="h-screen snap-start">
         <About />
       </section>
-      <section className="h-screen snap-start">
+      <section id='Resume' className="h-screen snap-start">
         <Resume />
       </section>
-      <section className="h-screen snap-start">
+      <section id='Portfolio' className="h-screen snap-start">
         <Portfolio />
       </section>
-      <section className="h-screen snap-start">
+      <section id='Tecnologias' className="h-screen snap-start">
         <Tecnologies />
       </section>
     </main>
