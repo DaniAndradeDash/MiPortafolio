@@ -30,10 +30,10 @@ export default function TechnologiesPage() {
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10">
                     {techs.map((tech, index) => (
                         <div
+                            key={tech.name} // <-- Agrega el key aquí
                             style={{ ["--neon-color" as any]: tech.icon.props.className.includes("text-[#") ? tech.icon.props.className.match(/#([0-9A-Fa-f]{6})/)[0] : "#00FFFF" }}
                         >
                             <motion.div
-                                key={tech.name}
                                 className="flex flex-col items-center justify-center p-6 rounded-lg bg-gray-900 border border-gray-800 shadow-lg hover:shadow-[0_0_20px_var(--neon-color)] transition"
                                 initial={{ opacity: 0, scale: 0.8 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
