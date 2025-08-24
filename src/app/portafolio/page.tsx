@@ -55,7 +55,7 @@ export default function PortfolioPage() {
             : projects.filter((p) => p.category === activeCategory)
 
     return (
-        <section className="min-h-screen bg-black text-white px-6 py-20">
+        <section className="min-h-screen bg-black text-white px-6 flex items-center pt-12">
             <div className="max-w-7xl mx-auto">
 
                 {/* Título */}

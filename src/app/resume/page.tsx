@@ -1,6 +1,6 @@
 export default function ResumePage() {
     return (
-        <section className="min-h-screen bg-black text-white px-6 py-16">
+        <section className="min-h-screen bg-black text-white px-6 flex justify-center items-center pt-12">
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
 
                 {/* Columna izquierda */}

@@ -21,7 +21,7 @@ const techs = [
 
 export default function TechnologiesPage() {
     return (
-        <section className="min-h-screen bg-black text-white px-6 py-20">
+        <section className="h-screen bg-black text-white px-6 flex items-center pt-12">
             <div className="max-w-7xl mx-auto text-center">
                 <h2 className="text-5xl font-montserrat font-bold uppercase tracking-widest mb-16">
                     Tecnologías

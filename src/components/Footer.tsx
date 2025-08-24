@@ -2,7 +2,7 @@ import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className="bg-black/80 text-gray-400 py-6 mt-10">
+        <footer className="bg-black/80 text-gray-400 py-6">
             <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
 
                 {/* Texto copyright */}
