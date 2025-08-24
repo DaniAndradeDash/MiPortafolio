@@ -6,19 +6,19 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
 
                 {/* Texto copyright */}
-                <p className="text-sm font-poppins">
+                <p className="text-sm text-[#006d6d] font-poppins">
                     © {new Date().getFullYear()} Daniel. Todos los derechos reservados.
                 </p>
 
                 {/* Redes sociales */}
                 <div className="flex gap-4 text-lg">
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#006d6d] transition-colors">
                         <FaLinkedin />
                     </a>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#006d6d] transition-colors">
                         <FaGithub />
                     </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#006d6d] transition-colors">
                         <FaTwitter />
                     </a>
                 </div>

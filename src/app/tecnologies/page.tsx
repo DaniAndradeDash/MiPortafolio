@@ -1,7 +1,8 @@
 "use client"
 
-import { FaReact, FaCss3Alt, FaBootstrap, FaGithub, FaWordpress, FaUnity, FaHtml5 } from "react-icons/fa"
-import { SiNextdotjs, SiTailwindcss, SiSharp, SiAdobeillustrator, SiAdobephotoshop } from "react-icons/si"
+import { FaReact, FaCss3Alt, FaBootstrap, FaGithub, FaWordpress, FaUnity, FaHtml5, FaNodeJs, FaDatabase } from "react-icons/fa"
+import { SiNextdotjs, SiTailwindcss, SiSharp, SiAdobeillustrator, SiAdobephotoshop, SiPostgresql, SiPostman } from "react-icons/si"
+import { SiJavascript, SiTypescript } from "react-icons/si"
 import { motion } from "framer-motion"
 
 const techs = [
@@ -11,19 +12,26 @@ const techs = [
     { name: "HTML5", icon: <FaHtml5 className="text-[#E34F26]" /> },
     { name: "CSS3", icon: <FaCss3Alt className="text-[#1572B6]" /> },
     { name: "Bootstrap", icon: <FaBootstrap className="text-[#7952B3]" /> },
+    { name: "JavaScript", icon: <SiJavascript className="text-[#F7DF1E]" /> },
+    { name: "TypeScript", icon: <SiTypescript className="text-[#3178C6]" /> },
     { name: "GitHub", icon: <FaGithub className="text-white" /> },
     { name: "WordPress", icon: <FaWordpress className="text-[#21759B]" /> },
     { name: "Unity", icon: <FaUnity className="text-white" /> },
     { name: "C#", icon: <SiSharp className="text-[#239120]" /> },
+    { name: "Node.js", icon: <FaNodeJs className="text-[#68A063]" /> },
+    { name: "API RESTful", icon: <FaDatabase className="text-[#00FFFF]" /> },
+    { name: "PostgreSQL", icon: <SiPostgresql className="text-[#336791]" /> },
+    { name: "Postman", icon: <SiPostman className="text-[#FF6C37]" /> },
     { name: "Photoshop", icon: <SiAdobephotoshop className="text-[#31A8FF]" /> },
     { name: "Illustrator", icon: <SiAdobeillustrator className="text-[#FF9A00]" /> },
 ]
+
 
 export default function TechnologiesPage() {
     return (
         <section className="h-screen bg-black text-white px-6 flex items-center pt-12">
             <div className="max-w-7xl mx-auto text-center">
-                <h2 className="text-5xl font-montserrat font-bold uppercase tracking-widest mb-16">
+                <h2 className="text-5xl text-[#00CED1] font-montserrat font-bold uppercase tracking-widest mb-16">
                     Tecnologías
                 </h2>
 

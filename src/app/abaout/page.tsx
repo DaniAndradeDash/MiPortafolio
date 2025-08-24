@@ -7,12 +7,12 @@ export default function AboutPage() {
 
                 {/* Columna izquierda - Texto */}
                 <div className="flex flex-col justify-center px-8 md:px-16 space-y-6">
-                    <h2 className="text-5xl font-montserrat font-bold uppercase tracking-widest">
-                        ACERCA DE MÍ
+                    <h2 className="text-5xl font-montserrat text-[#00CED1] font-bold uppercase tracking-widest">
+                        Acerca de mí
                     </h2>
 
-                    <p className="text-lg font-poppins text-gray-300">
-                        daniel@miportafolio.com
+                    <p className="text-lg font-poppins text-[#008080]">
+                        daniandrademty@gmail.com
                     </p>
 
                     <p className="text-gray-400 leading-relaxed font-poppins max-w-lg">
@@ -26,7 +26,7 @@ export default function AboutPage() {
 
                     <div className="text-gray-400 font-poppins space-y-1">
                         <p>Ubicación: General Escobedo, Nuevo León, México</p>
-                        <p>Tel: +52 81 1234 5678</p>
+                        <p className='text-[#008080]'>Tel: +52 8123374469</p>
                     </div>
                 </div>
 

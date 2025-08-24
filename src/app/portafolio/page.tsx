@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
+//import ParticlesBackground from "@/components/ParticlesBackground"
 
 const categories = ["Todos", "Web", "WordPress", "Diseño"]
 
@@ -56,10 +57,11 @@ export default function PortfolioPage() {
 
     return (
         <section className="min-h-screen bg-black text-white px-6 flex items-center pt-12">
+
             <div className="max-w-7xl mx-auto">
 
                 {/* Título */}
-                <h2 className="text-5xl font-montserrat font-bold uppercase tracking-widest text-center mb-12">
+                <h2 className="text-5xl text-[#00CED1] font-montserrat font-bold uppercase tracking-widest text-center mb-12">
                     Portafolio
                 </h2>
 
@@ -70,7 +72,7 @@ export default function PortfolioPage() {
                             key={cat}
                             onClick={() => setActiveCategory(cat)}
                             className={`font-poppins px-4 py-2 rounded-lg transition ${activeCategory === cat
-                                ? "bg-blue-500 text-white"
+                                ? "bg-[#006d6d] text-white"
                                 : "bg-gray-800 text-gray-400 hover:bg-gray-700"
                                 }`}
                         >
@@ -107,7 +109,7 @@ export default function PortfolioPage() {
                                 </div>
                                 {/* Texto */}
                                 <div className="p-6">
-                                    <h3 className="text-xl font-semibold font-montserrat mb-2 group-hover:text-blue-400 transition-colors">
+                                    <h3 className="text-xl font-semibold font-montserrat mb-2 group-hover:text-[#00CED1] transition-colors">
                                         {project.title}
                                     </h3>
                                     <p className="text-gray-400 text-sm font-poppins">
