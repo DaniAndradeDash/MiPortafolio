@@ -26,12 +26,14 @@ export default function AboutPage() {
 
                     <div className="text-gray-400 font-poppins space-y-1">
                         <p>Ubicación: General Escobedo, Nuevo León, México</p>
-                        <p className='text-[#008080]'>Tel: +52 8123374469</p>
+                        <p className="text-[#008080]">Tel: +52 8123374469</p>
                     </div>
                 </div>
 
                 {/* Columna derecha - Imagen */}
-                <div className="relative w-full h-full">
+                <div className="relative w-full h-full 
+                    iphone:h-[300px] android:h-[280px] samsung:h-[280px] 
+                    tablet:h-[400px] desktop:h-full">
                     <Image
                         src="/daniel-about-dark.png"
                         alt="Foto de Daniel"
@@ -43,5 +45,6 @@ export default function AboutPage() {
 
             </div>
         </section>
+
     )
 }

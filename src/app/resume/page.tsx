@@ -2,13 +2,14 @@ import ParticlesBackground from "@/components/ParticlesBackground";
 
 export default function ResumePage() {
     return (
-        <section className="min-h-screen bg-black text-white px-6 flex justify-center items-center pt-12 relative">
+        <section className="h-screen bg-black text-white px-6 flex justify-center items-center pt-12 iphone:pt-32 relative overflow-hidden">
             {/* Fondo decorativo sutil */}
             <ParticlesBackground />
-
             <div className="absolute inset-0 bg-gradient-to-br from-[#0f0f0f] via-[#0a0a0a] to-[#1a1a1a] opacity-40 pointer-events-none"></div>
 
-            <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 z-10">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 z-10 
+                iphone:gap-6 android:gap-6 samsung:gap-6 tablet:gap-10 desktop:gap-12
+                iphone:px-2 android:px-2 samsung:px-3 tablet:px-6 desktop:px-8">
 
                 {/* Columna izquierda */}
                 <div className="space-y-10">
@@ -17,7 +18,8 @@ export default function ResumePage() {
                         <h3 className="text-xl text-[#006d6d] font-montserrat font-bold border-b border-gray-700 pb-2 mb-4 uppercase">
                             Software Skills
                         </h3>
-                        <ul className="space-y-2 text-gray-300 font-poppins grid grid-cols-2 gap-x-4 gap-y-2">
+                        <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-gray-300 font-poppins text-sm 
+              iphone:text-xs android:text-xs samsung:text-sm tablet:text-base desktop:text-base">
                             <li>React</li>
                             <li>Next.js</li>
                             <li>Tailwind CSS</li>
@@ -31,27 +33,15 @@ export default function ResumePage() {
                             <li>Photoshop</li>
                             <li>Illustrator</li>
                         </ul>
-
                     </div>
-
-                    {/* Languages */}
-                    {/*<div>
-                        <h3 className="text-xl text-[#006d6d] font-montserrat font-bold border-b border-gray-700 pb-2 mb-4 uppercase">
-                            Languages
-                        </h3>
-                        <ul className="space-y-2 text-gray-300 font-poppins">
-                            <li>English</li>
-                            <li>Spanish</li>
-                            <li>Portuguese</li>
-                        </ul>
-                    </div>*/}
 
                     {/* Personal Skills */}
                     <div>
                         <h3 className="text-xl text-[#006d6d] font-montserrat font-bold border-b border-gray-700 pb-2 mb-4 uppercase">
                             Habilidades Personales
                         </h3>
-                        <ul className="space-y-2 text-gray-300 font-poppins">
+                        <ul className="space-y-2 text-gray-300 font-poppins text-sm 
+              iphone:text-xs android:text-xs samsung:text-sm tablet:text-base desktop:text-base">
                             <li>Resolución de problemas complejos</li>
                             <li>Autonomía y toma de decisiones</li>
                             <li>Pensamiento estructurado y creativo</li>
@@ -59,7 +49,6 @@ export default function ResumePage() {
                             <li>Adaptabilidad a nuevas tecnologías</li>
                             <li>Comunicación técnica clara</li>
                         </ul>
-
                     </div>
                 </div>
 
@@ -70,7 +59,8 @@ export default function ResumePage() {
                         <h3 className="text-xl text-[#006d6d] font-montserrat font-bold border-b border-gray-700 pb-2 mb-4 uppercase">
                             Experiencia
                         </h3>
-                        <div className="space-y-4 text-gray-300 font-poppins">
+                        <div className="space-y-4 text-gray-300 font-poppins text-sm 
+              iphone:text-xs android:text-xs samsung:text-sm tablet:text-base desktop:text-base">
                             <div>
                                 <p className="font-semibold">Cadtoner — Desarrollador Web Full-Stack</p>
                                 <p className="text-sm text-gray-500">Marzo 2025 - Presente</p>
@@ -91,8 +81,9 @@ export default function ResumePage() {
                         <h3 className="text-xl text-[#006d6d] font-montserrat font-bold border-b border-gray-700 pb-2 mb-4 uppercase">
                             Educación
                         </h3>
-                        <ul className="space-y-2 text-gray-300 font-poppins">
-                            <li>Ing. en Tecnologías y Sistemas de la Información — Universidad del Valle de México(UVM) - Trunca</li>
+                        <ul className="space-y-2 text-gray-300 font-poppins text-sm 
+              iphone:text-xs android:text-xs samsung:text-sm tablet:text-base desktop:text-base">
+                            <li>Ing. en Tecnologías y Sistemas de la Información — Universidad del Valle de México (UVM) - Trunca</li>
                         </ul>
                     </div>
 
@@ -101,7 +92,8 @@ export default function ResumePage() {
                         <h3 className="text-xl text-[#006d6d] font-montserrat font-bold border-b border-gray-700 pb-2 mb-4 uppercase">
                             ¿Qué puedo hacer?
                         </h3>
-                        <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-gray-300 font-poppins">
+                        <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-gray-300 font-poppins text-sm 
+              iphone:text-xs android:text-xs samsung:text-sm tablet:text-base desktop:text-base">
                             <li>Landing pages con Next.js y React</li>
                             <li>Aplicaciones con Node.js y Express</li>
                             <li>Simuladores con Unity y C#</li>

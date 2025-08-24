@@ -10,12 +10,12 @@ export default function Hero() {
                     Construyendo experiencias digitales modernas con React, Next.js y Tailwind, Bases de datos con Node.js, PostgressSQL y SQL.
                 </p>
                 <div className="w-full mt-6 flex gap-4 text-end">
-                    <button className="transition duration-150 bg-transparent hover:bg-[#00918A] cursor-pointer border border-white hover:border-none hover:-translate-y-1 hover:scale-110 px-6 py-3 rounded-lg font-semibold">
+                    <a href="#Resume" className="transition duration-150 bg-transparent hover:bg-[#00918A] cursor-pointer border border-white hover:border-none hover:-translate-y-1 hover:scale-110 px-6 py-3 rounded-lg font-semibold">
                         Resumen
-                    </button>
-                    <button className="transition duration-150 bg-transparent hover:bg-[#00918A] cursor-pointer border border-white hover:border-none hover:-translate-y-1 hover:scale-110 px-6 py-3 rounded-lg font-semibold">
+                    </a>
+                    <a href="#Portfolio" className="transition duration-150 bg-transparent hover:bg-[#00918A] cursor-pointer border border-white hover:border-none hover:-translate-y-1 hover:scale-110 px-6 py-3 rounded-lg font-semibold">
                         Portafolio
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>
