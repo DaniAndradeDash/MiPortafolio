@@ -16,33 +16,33 @@ type Project = {
 
 const projects: Project[] = [
     {
-        title: "Landing Page Corporativa",
+        title: "Landing Page",
         category: "Web",
         description: "Diseñada desde cero con Next.js, Tailwind y animaciones sutiles.",
-        image: "/proyectos/landing-corporativa.jpg",
+        image: "/Landing_corporativa.png",
         link: "#"
     },
     {
-        title: "Tienda Online WordPress",
+        title: "Pagina web con WordPress",
         category: "WordPress",
         description: "E-commerce optimizado con WooCommerce y diseño personalizado.",
-        image: "/proyectos/ecommerce-wordpress.jpg",
+        image: "/wordpress_bifrost.png",
         link: "#"
     },
     {
-        title: "Branding & Diseño UI",
+        title: "Pagina web con React",
         category: "Diseño",
         description: "Identidad visual y diseño de interfaces para startups.",
-        image: "/proyectos/ui-branding.jpg",
+        image: "/ui-branding.png",
         link: "#"
-    },
-    {
+    }
+    /*{
         title: "Aplicación React Interactiva",
         category: "Web",
         description: "SPA creada con React y backend en Node.js.",
         image: "/proyectos/app-react.jpg",
         link: "#"
-    }
+    }*/
 ];
 
 export default function PortfolioPage() {
