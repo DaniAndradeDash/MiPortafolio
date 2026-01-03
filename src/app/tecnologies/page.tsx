@@ -29,13 +29,13 @@ const techs = [
 
 export default function TechnologiesPage() {
     return (
-        <section className="h-screen bg-black text-white px-6 flex items-center pt-12">
+        <section className="bg-black text-white py-24">
             <div className="max-w-7xl mx-auto text-center">
-                <h2 className="text-5xl text-[#00CED1] font-montserrat font-bold uppercase tracking-widest mb-16">
+                <h2 className="text-5xl text-[#00CED1] font-montserrat font-bold uppercase tracking-widest mt-4 mb-12">
                     Tecnologías
                 </h2>
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10 ">
                     {techs.map((tech, index) => (
                         <div
                             key={tech.name} // <-- Agrega el key aquí

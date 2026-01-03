@@ -3,48 +3,11 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
+import { projects, Project } from "@/mocks/projects.mock"
 //import ParticlesBackground from "@/components/ParticlesBackground"
 
 const categories = ["Todos", "Web", "WordPress", "Diseño"]
 
-type Project = {
-    title: string;
-    category: string;
-    description: string;
-    image: string;
-    link: string;
-};
-
-const projects: Project[] = [
-    {
-        title: "Landing Page",
-        category: "Web",
-        description: "Diseñada desde cero con Next.js, Tailwind y animaciones sutiles.",
-        image: "/Landing_corporativa.png",
-        link: "#"
-    },
-    {
-        title: "Pagina web con WordPress",
-        category: "WordPress",
-        description: "E-commerce optimizado con WooCommerce y diseño personalizado.",
-        image: "/wordpress_bifrost.png",
-        link: "#"
-    },
-    {
-        title: "Pagina web con React",
-        category: "Diseño",
-        description: "Identidad visual y diseño de interfaces para startups.",
-        image: "/ui-branding.png",
-        link: "#"
-    }
-    /*{
-        title: "Aplicación React Interactiva",
-        category: "Web",
-        description: "SPA creada con React y backend en Node.js.",
-        image: "/proyectos/app-react.jpg",
-        link: "#"
-    }*/
-];
 
 export default function PortfolioPage() {
     const [activeCategory, setActiveCategory] = useState("Todos")
@@ -56,7 +19,7 @@ export default function PortfolioPage() {
             : projects.filter((p) => p.category === activeCategory)
 
     return (
-        <section className="min-h-screen bg-black text-white px-6 flex items-center pt-12">
+        <section className="bg-black text-white px-6 py-12">
 
             <div className="max-w-7xl mx-auto">
 
@@ -125,7 +88,7 @@ export default function PortfolioPage() {
                 <AnimatePresence>
                     {selectedProject && (
                         <motion.div
-                            className="fixed inset-0 bg-black/80 flex items-center justify-center p-6 z-50"
+                            className="fixed inset-0 bg-black/80 flex items-center justify-center p-6 z-100"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
@@ -139,7 +102,7 @@ export default function PortfolioPage() {
                                 onClick={(e) => e.stopPropagation()}
                             >
                                 <button
-                                    className="absolute top-3 right-4 text-gray-400 hover:text-white text-2xl"
+                                    className="absolute top-0 right-2 text-gray-400 hover:text-white text-4xl"
                                     onClick={() => setSelectedProject(null)}
                                 >
                                     &times;
